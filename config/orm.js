@@ -64,7 +64,23 @@ let orm = {
       });
     },
 
+update: function(table, ojbColVals, condition, cb) {
+  let queryString = "UPDATE " + table;
 
+  queryString += " SET ";
+  queryString += objToSql(ojbColVals);
+  queryString += " WHERE ";
+  queryString += condition;
+
+  console.log(queryString);
+  connection.query(queryString, function(err, result) {
+    if (err) {
+      throw err;
+    }
+
+    cb(result);
+  })
+}
 
 };
 
