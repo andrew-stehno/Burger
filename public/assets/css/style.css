@@ -1,3 +1,8 @@
-.header {
+body {
+    background-color: #ffca63;
+}
+
+.header,  h2, .create-form{
     text-align: center;
 }
+
