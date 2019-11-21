@@ -52,4 +52,4 @@ You are now in da burger bidness!
 
 ## Deployed on Heroku
 
-The completed project can be viewed [here]()
+The completed project can be viewed [here](https://polar-cliffs-00229.herokuapp.com/)
